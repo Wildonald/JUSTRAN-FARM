@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.vision-mission {
+  padding: 100px 8%;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+}
+
+.vision-mission .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.vm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.vm-header h2 {
+  font-size: 38px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a202c;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+
+.vm-header .green-text {
+  color: #15803d; /* CHI green */
+}
+
+.vm-header .tagline {
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  color: #64748b;
+  text-align: right;
+  line-height: 1.6;
+  margin: 0;
+  padding-top: 8px;
+}
+
+/* DIVIDER */
+.divider {
+  border: none;
+  border-top: 1px solid #e2e8f0;
+  margin-bottom: 50px;
+}
+
+/* CARDS GRID */
+.vm-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* CARD */
+.vm-card {
+  background: #f8fafc;
+  border: 1px solid #f1f5f9;
+  border-radius: 16px;
+  padding: 35px 30px;
+  transition: all 0.3s ease;
+}
+
+.vm-card:hover {
+  background: #ffffff;
+  border-color: #e2e8f0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  transform: translateY(-4px);
+}
+
+/* ICON */
+.icon-box {
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+}
+
+.vm-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 12px 0;
+}
+
+.vm-card p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .vm-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .vm-header .tagline { text-align: left; }
+  .vm-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 640px) {
+  .vision-mission { padding: 70px 6%; }
+  .vm-header h2 { font-size: 30px; }
+  .vm-card { padding: 28px 24px; }
+}

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+.tgi-banner {
+  padding: 70px 8%;
+  background: #f8fafc; /* light grey/off-white bg like screenshot */
+  font-family: 'Poppins', sans-serif;
+}
+
+.tgi-banner .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tgi-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* LEFT SIDE */
+.tgi-left .badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #e2e8f0;
+  color: #475569;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.tgi-left .badge .dot {
+  width: 6px;
+  height: 6px;
+  background: #15803d; /* green dot */
+  border-radius: 50%;
+}
+
+.tgi-left h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1a202c;
+  line-height: 1.2;
+  margin: 0 0 16px 0;
+}
+
+/* Gradient text for "Tropical General Investments" */
+.gradient-text {
+  background: linear-gradient(90deg, #15803d 0%, #dc2626 100%); /* green to red */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.tgi-left p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.7;
+  max-width: 550px;
+  margin: 0;
+}
+
+/* RIGHT SIDE - BUTTON */
+.tgi-right .tgi-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #f1f5f9;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.tgi-right .tgi-btn:hover {
+  background: #e2e8f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+}
+
+.tgi-right .tgi-btn svg {
+  stroke: #475569;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .tgi-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .tgi-left h2 { font-size: 30px; }
+}
+
+@media (max-width: 640px) {
+  .tgi-banner { padding: 50px 6%; }
+  .tgi-left h2 { font-size: 26px; }
+  .tgi-left p { font-size: 14px; }
+}

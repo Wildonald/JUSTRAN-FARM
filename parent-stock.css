@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+.poultry-section {
+  padding: 100px 8%;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden; /* to hide watermark overflow */
+}
+
+.poultry-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2; /* keep text above watermark */
+}
+
+/* WATERMARK "justran" in background */
+.poultry-section::before {
+  content: "JUSTRAN";
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  font-size: 220px;
+  font-weight: 800;
+  color: #f1f5f9; /* very light grey */
+  opacity: 0.6;
+  z-index: 1;
+  pointer-events: none;
+  text-transform: lowercase;
+  letter-spacing: -10px;
+}
+
+/* HEADING */
+.section-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1a202c;
+  margin: 0 0 20px 0;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+/* PARAGRAPH */
+.section-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 950px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .poultry-section { padding: 70px 6%; }
+  .section-title { font-size: 32px; }
+  .poultry-section::before { font-size: 120px; right: 2%; opacity: 0.4; }
+}
+
+@media (max-width: 600px) {
+  .section-text { font-size: 14px; line-height: 1.7; }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+
+.parent-stock-section {
+  padding: 100px 8%;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden; /* to hide watermark overflow */
+}
+
+.parent-stock-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2; /* keep text above watermark */
+}
+
+/* WATERMARK "chi" in background */
+.parent-stock-section::before {
+  content: "JUSTRAN";
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  font-size: 220px;
+  font-weight: 800;
+  color: #f1f5f9; /* very light grey */
+  opacity: 0.6;
+  z-index: 1;
+  pointer-events: none;
+  text-transform: lowercase;
+  letter-spacing: -10px;
+}
+
+/* HEADING */
+.parent-stock-section .section-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #1a202c;
+  margin: 0 0 20px 0;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+}
+
+/* PARAGRAPH */
+.parent-stock-section .section-text {
+  font-size: 15px;
+  font-weight: 400;
+  color: #475569;
+  line-height: 1.8;
+  margin: 0;
+  max-width: 950px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .parent-stock-section { padding: 70px 6%; }
+  .parent-stock-section .section-title { font-size: 32px; }
+  .parent-stock-section::before { font-size: 120px; right: 2%; opacity: 0.4; }
+}
+
+@media (max-width: 600px) {
+  .parent-stock-section .section-text { font-size: 14px; line-height: 1.7; }
+}
+
+

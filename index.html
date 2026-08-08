@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>justran Farms - Products</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <!-- FLOATING NAVBAR WITH BOTH DROPDOWNS -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <img src="./justran farm =logo.png" alt="">
+      </div>
+      
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+
+          <!-- ABOUT DROPDOWN -->
+          <li class="dropdown">
+            <a href="#">About <span class="arrow"><i class="fa-solid fa-chevron-down"></i></span></a>
+            <ul class="dropdown-menu simple-dropdown">
+              <li><a href="/company-profile.html"><span class="icon">🏢</span> Company Profile</a></li>
+              <li><a href="/tgi-group.html"><span class="icon">🌐</span> TGI Group</a></li>
+              <li><a href="/vision-mission.html"><span class="icon">🎯</span> Vision & Mission</a></li>
+              <li><a href="/culture-values.html"><span class="icon">🌱</span> Culture & Values</a></li>
+              <li><a href="/csr.html"><span class="icon">🤝</span> CSR</a></li>
+              <li><a href="/faq"><span class="icon">❓</span> FAQ</a></li>
+            </ul>
+          </li>
+
+          <!-- PRODUCTS MEGA DROPDOWN -->
+          <li class="dropdown mega">
+            <a href="#" class="active">Products <span class="arrow"><i class="fa-solid fa-chevron-up"></i></span></a>
+            <div class="dropdown-menu mega-dropdown">
+              <p class="mega-label"><span class="dot"></span> OUR RANGE</p>
+              
+              <div class="mega-grid">
+                <!-- COL 1 -->
+                <div class="mega-col">
+                  <h5><span class="icon">🐔</span> POULTRY</h5>
+                  <a href="/parent-stock.html">Parent Stock Day-Old Chicks</a>
+                  <a href="./commercial.html">Commercial Day-Old Chicks</a>
+
+                  <h5><span class="icon">🩺</span> VETERINARY</h5>
+                  <a href="./veterinary.html">Veterinary Services</a>
+                  <a href="./Bio-Security.html">Bio-Security & Lab Diagnostics</a>
+                </div>
+
+                <!-- COL 2 -->
+                <div class="mega-col">
+                  <h5><span class="icon">❄️</span> FROZEN MEAT</h5>
+                  <a href="/chicken">Chicken</a>
+                  <a href="/beef-products">Beef Products</a>
+                  <a href="/customised">Customised Products</a>
+
+                  <h5><span class="icon">📋</span> TECHNICAL SUPPORT</h5>
+                  <a href="/tech-support">Veterinary Services & Customer Support</a>
+                  <a href="/lab-support">Laboratory Services Support</a>
+                </div>
+
+                <!-- COL 3 -->
+                <div class="mega-col">
+                  <h5><span class="icon">🐟</span> AQUACULTURE</h5>
+                  <a href="/catfish">Catfish</a>
+
+                  <h5><span class="icon">⚙️</span> EQUIPMENT</h5>
+                  <a href="/big-dutchman">Big Dutchman</a>
+                  <a href="/petersime">Petersime</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li><a href="/why-chi">Why justran Farms</a></li>
+          <li><a href="/poultry-school">Poultry School</a></li>
+          <li><a href="/careers">Careers</a></li>
+        </ul>
+      </nav>
+
+      <a href="/contact" class="btn-contact"><i class="fa-solid fa-phone"></i> Contact Sales</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    
+    <div class="hero-content">
+      <h1>Frozen Meat <br> Products</h1>
+      <p class="categories">CHICKEN · BEEF · CUSTOMISED PRODUCTS</p>
+      <p class="desc">
+        Biological risk management recognizes that animal diseases 
+        cannot be eliminated and livestock producers can manage 
+        disease risk through effective control measures.
+      </p>
+      <div class="hero-buttons">
+        <a href="/frozen-meat" class="btn btn-green">Explore Frozen Meat Products <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="/products" class="btn btn-outline">See All Products</a>
+      </div>
+    </div>
+
+    <ldiv class="slider-dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </ldiv>
+  </section>
+
+
+
+  <!-- OUR STORY SECTION -->
+<section class="our-story">
+  <div class="container">
+
+    <!-- LEFT COLUMN -->
+    <div class="story-left">
+      <p class="section-tag"><span class="dot"></span> OUR STORY <span class="dot"></span></p>
+      <h2>Rooted in nature, <br><span class="green-text">driven by science.</span></h2>
+
+      <!-- IMAGE SLIDER -->
+      <div class="slider">
+        <div class="slides">
+          <div class="slide active">
+            <img src="./chicken 3.jfif" alt="Training Session">
+            <span class="slide-counter">1 / 4</span>
+          </div>
+          <div class="slide">
+            <img src="./chicken 4.jpg" alt="Farm Operation">
+            <span class="slide-counter">2 / 4</span>
+          </div>
+          <div class="slide">
+            <img src="./chicken 5.webp" alt="Processing Plant">
+            <span class="slide-counter">3 / 4</span>
+          </div>
+          <div class="slide">
+            <img src="./chicken6.jpg" alt="Laboratory">
+            <span class="slide-counter">4 / 4</span>
+          </div>
+        </div>
+
+        <!-- ARROWS -->
+        <button class="slider-btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider-btn next"><i class="fa-solid fa-chevron-right"></i></button>
+      </div>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="story-right">
+      <p class="story-desc">
+        Justran Farms Ltd. is an integrated poultry operation with breeding,
+        commercial broiler processing, aquaculture, and veterinary services
+        — all under one roof.
+      </p>
+
+      <div class="quote-box">
+        <p>"From hatchery to harvest — we power every link
+        in Nigeria's poultry value chain."</p>
+        <span>— justran Farms, Est. 2004</span>
+      </div>
+
+      <hr>
+
+      <p class="story-desc">
+        We provide parent stock to hatcheries, distribute
+        commercial chicks, and support customers with post-
+        sales technical services. Our aquaculture division breeds
+        premium catfish while our veterinary division supplies
+        high-quality products and diagnostics.
+      </p>
+
+      <hr>
+
+      <div class="cert-badge">
+  <div class="cert-icon">
+    <i class="fa-solid fa-medal"></i>
+  </div>
+  <div class="cert-text">
+    <h4>NAFDAC & SON</h4>
+    <p>Certified Operations</p>
+  </div>
+</div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="products-intro">
+  <div class="container">
+    
+    <!-- LEFT COLUMN -->
+    <div class="intro-left">
+      <p class="section-tag"><span class="dot"></span> WHAT WE OFFER</p>
+      <h2>Products & <br><span class="green-text">Services</span></h2>
+    </div>
+
+    <!-- RIGHT COLUMN -->
+    <div class="intro-right">
+      <p>
+        At justran Farms Limited, we are committed to
+        delivering quality and innovation across
+        every step of the food and agricultural value
+        chain. Our diverse product offerings are
+        designed to meet the growing needs of
+        consumers, businesses, and partners across
+        Nigeria and beyond.
+      </p>
+      <p class="cta-text">Explore our key product categories below.</p>
+    </div>
+
+    <hr>
+
+    <hr>
+
+  </div>
+
+
+</section>
+
+
+<section class="why-chi-header">
+  <div class="container">
+    
+    <!-- LEFT -->
+    <div class="why-left">
+      <p class="section-pill"><span class="dot"></span> WHY Justran FARMS</p>
+      <h2>
+        Why the best farms <br>
+        <span class="green-text">choose Justran Farms.</span>
+      </h2>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="why-right">
+      <p>We build partnerships that last decades – not <br> just supply chains.</p>
+    </div>
+
+  </div>
+
+
+  <hr>
+
+
+  <section class="why-features">
+  <div class="container">
+    <div class="features-grid">
+
+      <!-- CARD 1 -->
+      <div class="feature-card">
+        <div class="feature-icon">🏆</div>
+        <h3>Industry Expertise</h3>
+        <p>Decades of integrated poultry & aquaculture leadership — we built Nigeria's protein supply chain.</p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="feature-card">
+        <div class="feature-icon">🔄</div>
+        <h3>Full Production Cycle</h3>
+        <p>From egg incubation through to frozen products — every stage owned and operated in-house.</p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="feature-card">
+        <div class="feature-icon">📋</div>
+        <h3>Customer Training</h3>
+        <p>Poultry school programs and post-sales technical support that make clients self-sufficient.</p>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="feature-card">
+        <div class="feature-icon">🚀</div>
+        <h3>Proven Biosecurity</h3>
+        <p>Lab-backed vet protocols and vaccine supply that protect your flock and guarantee integrity.</p>
+      </div>
+
+      <!-- CARD 5 -->
+      <div class="feature-card">
+        <div class="feature-icon">📍</div>
+        <h3>Nationwide Reach</h3>
+        <p>Four hubs across Lagos, abia, rivers, akwaibom and Ogun State — consistent supply wherever you farm.</p>
+      </div>
+
+      <!-- CARD 6 -->
+      <div class="feature-card">
+        <div class="feature-icon">🤝</div>
+        <h3>Trusted Partnerships</h3>
+        <p>A global network of feed, hatchery and biosecurity suppliers ensuring the best inputs.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+</section>
+
+<section class="contact-hero">
+  <div class="overlay"></div>
+  <div class="container">
+    
+    <p class="pill-tag">
+      <span class="dot"></span> GET IN TOUCH
+    </p>
+
+    <h1>We'd Love to <span class="accent">Hear From You</span></h1>
+
+    <p class="sub-text">
+      Reach out for bookings, enquiries or partnerships. Our team <br>
+      typically responds within 24 hours.
+    </p>
+
+    <section class="contact-cards">
+  <div class="container">
+    
+    <div class="cards-header">
+      <div class="icon-wrapper">
+        <i class="fa-solid fa-phone"></i>
+      </div>
+      <h3>Call Us Directly</h3>
+    </div>
+
+    <div class="cards-grid">
+      
+      <div class="contact-card">
+        <p class="card-label">HOTLINE</p>
+        <a href="tel:09079955222" class="card-number">09079955222</a>
+      </div>
+
+      <div class="contact-card">
+        <p class="card-label">FROZEN FOODS</p>
+        <a href="tel:08029233938" class="card-number">08029233938</a>
+      </div>
+
+      <div class="contact-card">
+        <p class="card-label">DOC SALES</p>
+        <a href="tel:08127138650" class="card-number">08127138650</a>
+      </div>
+
+      <div class="contact-card">
+        <p class="card-label">CATFISH SALES</p>
+        <a href="tel:+2348124085871" class="card-number">+2348124085871</a>
+      </div>
+
+      <div class="contact-card">
+        <p class="card-label">FISH FEED SALES</p>
+        <a href="tel:+2348060275429" class="card-number">+2348060275429</a>
+      </div>
+
+      <div class="contact-card">
+        <p class="card-label">BOOKING LINE</p>
+        <a href="tel:08132592782" class="card-number">08132592782</a>
+      </div>
+      
+      <div class="container">
+    
+    <a href="mailto:info@chifarms.com" class="email-card">
+      <div class="email-text">
+        <p class="email-label">EMAIL US</p>
+        <p class="email-address">info@justranfarms@gmail.com</p>
+      </div>
+      <div class="email-icon">
+        <i class="fa-solid fa-hand-pointer"></i>
+      </div>
+    </a>
+
+  </div>
+
+    </div>
+  </div>
+</section>
+
+  </div>
+</section>
+
+<section class="contact-form-section">
+  <div class="container">
+    
+    <div class="form-wrapper">
+      <h4>Fill out the form below</h4>
+
+    <form action="https://formsubmit.co/donaldc.wilson98@gmail.com" method="POST">
+        <!-- ROW 1 -->
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullname">FULL NAME</label>
+            <input type="text" id="fullname" name="name" placeholder="John Doe" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">EMAIL ADDRESS</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+        </div>
+
+        <!-- ROW 2 -->
+        <div class="form-group">
+          <label for="phone">PHONE NUMBER</label>
+          <input type="tel" id="phone" name="phone" placeholder="+234 800 000 0000">
+        </div>
+
+        <!-- ROW 3 - CUSTOM DROPDOWN WITH EMOJIS -->
+        <div class="form-group">
+          <label>INQUIRY TYPE</label>
+          <div class="custom-select" id="inquirySelect">
+            <select class="select-selected">
+              <option> Day Old Chicks Booking</option> 
+              <option>Frozen Foods</option> 
+              <option>eggs..</option> 
+              <option>Career</option> 
+              <option>Catfish Products</option> 
+              <option>Poultry School</option> 
+              <option>Technical Support</option> 
+            </select>
+            <!-- <div class="select-items select-hide">
+              <div data-value="doc"><span>🐣</span> Day Old Chicks Booking</div>
+              <div data-value="frozen"><span>❄️</span> Frozen Foods</div>
+              <div data-value="career"><span>💼</span> Career</div>
+              <div data-value="catfish"><span>🐟</span> Catfish Products</div>
+              <div data-value="school"><span>📋</span> Poultry School</div>
+              <div data-value="support"><span>🧬</span> Technical Support</div>
+            </div> -->
+            <input type="hidden" name="inquiry" id="inquiryInput">
+          </div>
+        </div>
+
+        <!-- ROW 4 - MESSAGE -->
+        <div class="form-group">
+          <label for="message">MESSAGE</label>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us what you need..."></textarea>
+        </div>
+
+        <!-- SUBMIT -->
+        <button type="submit" class="submit-btn">Send Message →</button>
+
+        <!-- TRUST NOTE -->
+        <p class="trust-note">🔒 Your information is safe with us</p>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<div class="google-map">
+
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7950.558103966541!2d7.356669135493013!3d4.892877230331677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1soba%20ohanso%20akwete%20ndoki!5e0!3m2!1sen!2sng!4v1785223309927!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
+
+
+
+
+
+
+<footer class="site-footer">
+  <div class="container">
+    
+    <h5 class="footer-heading">
+      <span class="location-pin">📍</span> OUR LOCATIONS
+    </h5>
+
+    <div class="locations-grid">
+      
+      <!-- CARD 1 -->
+      <div class="location-card">
+        <div class="location-icon">📄</div>
+        <div class="location-content">
+          <h6>HQ & FROZEN FOOD SALES</h6>
+          <p>oba/ohanso road, Akwete ukwa east L.G.A, Abia State, Nigeria</p>
+        </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="location-card">
+        <div class="location-icon">🏭</div>
+        <div class="location-content">
+          <h6>PROCESSING PLANT</h6>
+          <p>oba/ohanso road, Akwete ukwa east L.G.A, Abia State, Nigeria</p>
+        </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="location-card">
+        <div class="location-icon">📍</div>
+        <div class="location-content">
+          <h6>BOOKING / DIAGNOSTIC CENTRE</h6>
+          <p>oba/ohanso road, Akwete ukwa east L.G.A, Abia State, Nigeria</p>
+        </div>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="location-card">
+        <div class="location-icon">⚡</div>
+        <div class="location-content">
+          <h6>oba/ohanso road, Akwete ukwa east L.G.A, Abia State, Nigeria</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- BOTTOM BAR -->
+    <div class="footer-bottom">
+      <p>Part of <strong>TGI Group</strong> <span class="divider">|</span> Agribusiness · FMCG · Manufacturing · Distribution</p>
+    </div>
+
+    <div class="chinyere">
+        <p>© 2026 Justran Farm. All rights reserved.</p>
+    </div>
+
+    <div class="chinyere">
+        <p>Designed by <br><a href="https://www.linkedin.com/in/donald-c-wilson-894908411 ">Wilson Chiemeka Donald</a></p>
+    </div>
+
+  </div>
+</footer>
+
+
+
+
+
+  
+<script src="./poultry.js"></script>
+</body>
+</html>
