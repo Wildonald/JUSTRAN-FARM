@@ -1,0 +1,246 @@
+.contact-hero {
+  position: relative;
+  padding: 140px 8%;
+  background: url('contact-banner.jpg') center/cover no-repeat; /* replace with your image */
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* DARK GREEN OVERLAY */
+.contact-hero .overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(90deg, rgba(13, 59, 30, 0.88) 0%, rgba(13, 59, 30, 0.75) 100%);
+  z-index: 1;
+}
+
+.contact-hero .container {
+  position: relative;
+  z-index: 2;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* PILL TAG */
+.pill-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #86efac;
+  background: rgba(134, 239, 172, 0.12);
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  backdrop-filter: blur(6px);
+}
+.pill-tag .dot {
+  width: 6px;
+  height: 6px;
+  background: #86efac;
+  border-radius: 50%;
+}
+
+/* MAIN TITLE */
+.contact-hero h1 {
+  font-size: 54px;
+  font-weight: 800;
+  line-height: 1.15;
+  margin: 0 0 18px 0;
+}
+.contact-hero h1 .accent {
+  color: #4ade80; /* bright green */
+}
+
+/* SUB TEXT */
+.contact-hero .sub-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  max-width: 520px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .contact-hero h1 { font-size: 42px; }
+  .contact-hero { padding: 100px 6%; }
+}
+
+@media (max-width: 640px) {
+  .contact-hero h1 { font-size: 32px; }
+  .contact-hero .sub-text br { display: none; }
+  .contact-hero { padding: 80px 6%; }
+}
+
+.contact-cards {
+  padding: 60px 8% 120px 8%;
+  background: linear-gradient(rgba(10, 50, 20, 0.85), rgba(10, 50, 20, 0.85)), 
+              url('contact-banner.jpg') center/cover no-repeat fixed; /* same bg as hero */
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact-cards .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.cards-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 35px;
+}
+
+.icon-wrapper {
+  width: 44px;
+  height: 44px;
+  background: rgba(248, 113, 113, 0.15); /* soft red bg */
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-wrapper i {
+  font-size: 20px;
+  color: #f87171; /* pink/red phone */
+}
+
+.cards-header h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+
+/* 3x2 GRID */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+/* GLASS CARD */
+.contact-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 18px 22px;
+  transition: all 0.3s ease;
+}
+.contact-card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(74, 222, 128, 0.4);
+  transform: translateY(-2px);
+}
+
+.card-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+}
+
+.card-number {
+  font-size: 18px;
+  font-weight: 600;
+  color: #a7f3d0; /* light green number */
+  text-decoration: none;
+  transition: 0.3s;
+}
+.card-number:hover {
+  color: #4ade80;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cards-grid { grid-template-columns: 1fr; }
+  .contact-cards { padding: 40px 6% 80px 6%; }
+}
+
+.email-card-section {
+  padding: 0 8% 120px 8%; /* no top padding, connects to cards above */
+  background: linear-gradient(rgba(10, 50, 20, 0.85), rgba(10, 50, 20, 0.85)), 
+              url('contact-banner.jpg') center/cover no-repeat fixed; /* same bg */
+  font-family: 'Poppins', sans-serif;
+}
+
+.email-card-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* GLASS EMAIL CARD */
+.email-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(22, 101, 52, 0.25); /* deep green glass */
+  border: 1px solid rgba(74, 222, 128, 0.2);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-radius: 18px;
+  padding: 22px 28px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.email-card:hover {
+  background: rgba(22, 101, 52, 0.4);
+  border-color: rgba(74, 222, 128, 0.5);
+  transform: translateY(-3px);
+}
+
+/* TEXT */
+.email-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #86efac; /* light green */
+  margin: 0 0 6px 0;
+  text-transform: uppercase;
+}
+
+.email-address {
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+}
+
+/* ICON */
+.email-icon {
+  width: 60px;
+  height: 46px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.email-icon i {
+  font-size: 22px;
+  color: #fff;
+}
+
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .email-card { padding: 18px 20px; }
+  .email-address { font-size: 16px; }
+  .email-card-section { padding: 0 6% 80px 6%; }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
