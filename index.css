@@ -3,6 +3,10 @@
 }
 body { font-family: 'Poppins', sans-serif; }
 
+ul{
+  list-style: none;
+}
+
 /* NAVBAR */
 .navbar {
   position: absolute; top: 20px; left: 50%; transform: translateX(-50%);

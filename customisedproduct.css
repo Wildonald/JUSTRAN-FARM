@@ -1,0 +1,70 @@
+/* ===== CHI CUSTOM PRODUCTS SECTION ===== */
+.chi-products-section {
+  padding: 100px 0;
+  background: #08bd44;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.chi-products-section::after {
+  content: "JUSTRAN FARM";
+  position: absolute;
+  top: 50px;
+  right: 8%;
+  font-size: 120px;
+  font-weight: 800;
+  color:rgba(17, 24, 39, 0.03);
+  letter-spacing: -5px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.chi-products-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 8%;
+  position: relative;
+  z-index: 1;
+}
+
+.chi-products-content {
+  max-width: 900px;
+}
+
+.chi-products-title {
+  font-size: 42px;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  letter-spacing: -0.5px;
+  font-style: italic;
+}
+
+.chi-products-text {
+  font-size: 15.5px;
+  font-weight: 400;
+  color: #4b5563;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.chi-products-text strong {
+  color: #111827;
+  font-weight: 700;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .chi-products-title { font-size: 34px; }
+  .chi-products-section::after { font-size: 80px; right: 6%; top: 40px; }
+  .chi-products-container { padding: 0 6%; }
+}
+
+@media (max-width: 600px) {
+  .chi-products-title { font-size: 28px; }
+  .chi-products-text { font-size: 14.5px; }
+  .chi-products-section::after { display: none; }
+}

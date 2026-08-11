@@ -1,0 +1,119 @@
+/* ===== CHI CAREERS SECTION ===== */
+.chi-careers-section {
+  padding: 100px 0;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  color: #111827;
+}
+
+.chi-careers-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 8%;
+}
+
+/* HEADER */
+.chi-careers-tag {
+  display: inline-block;
+  background: #f3f4f6;
+  color: #4b5563;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.chi-careers-main-title {
+  font-size: 44px;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.2;
+  margin-bottom: 60px;
+  letter-spacing: -0.5px;
+}
+
+.chi-careers-main-title .green { color: #166534; }
+
+/* PROGRAM */
+.chi-careers-program {
+  margin-bottom: 50px;
+}
+
+.chi-careers-subtag {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #6b7280;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.chi-careers-program-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* 4 CARDS GRID */
+.chi-careers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.chi-careers-card {
+  background: #ffffff;
+  padding: 0;
+  transition: 0.3s ease;
+}
+
+.chi-careers-card:hover {
+  transform: translateY(-4px);
+}
+
+.chi-careers-card-icon {
+  width: 40px;
+  height: 40px;
+  background: #fef3c7; /* light yellow */
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.chi-careers-card-icon.blue { background: #dbeafe; }
+.chi-careers-card-icon.green { background: #d1fae5; }
+.chi-careers-card-icon.orange { background: #ffedd5; }
+
+.chi-careers-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 8px;
+}
+
+.chi-careers-card-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .chi-careers-grid { grid-template-columns: repeat(2, 1fr); gap: 40px; }
+  .chi-careers-main-title { font-size: 36px; }
+}
+
+@media (max-width: 600px) {
+  .chi-careers-grid { grid-template-columns: 1fr; }
+  .chi-careers-main-title { font-size: 30px; }
+  .chi-careers-program-title { font-size: 22px; }
+  .chi-careers-container { padding: 0 6%; }
+}

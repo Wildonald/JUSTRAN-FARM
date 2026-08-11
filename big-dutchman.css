@@ -1,0 +1,64 @@
+/* ===== CHI POULTRY EQUIPMENT SECTION ===== */
+.chi-equip-section {
+  padding: 100px 0;
+  background: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* FAINT WATERMARK LOGO */
+.chi-equip-section::after {
+  content: "JUSTRAN FARMS LTD";
+  position: absolute;
+  top: 60px;
+  right: 8%;
+  font-size: 70px;
+  font-weight: 800;
+  color: rgba(17, 24, 39, 0.04);
+  letter-spacing: 2px;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.chi-equip-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 8%;
+  position: relative;
+  z-index: 1;
+}
+
+/* HEADER */
+.chi-equip-header {
+  max-width: 950px;
+}
+
+.chi-equip-main-title {
+  font-size: 48px;
+  font-weight: 800;
+  color: #111827;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+}
+
+.chi-equip-subtitle {
+  font-size: 15.5px;
+  color: #4b5563;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+  .chi-equip-main-title { font-size: 38px; }
+  .chi-equip-section::after { font-size: 50px; right: 6%; }
+  .chi-equip-container { padding: 0 6%; }
+}
+
+@media (max-width: 600px) {
+  .chi-equip-main-title { font-size: 32px; }
+  .chi-equip-subtitle { font-size: 14.5px; }
+  .chi-equip-section::after { display: none; }
+}
